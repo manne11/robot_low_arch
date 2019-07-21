@@ -1,0 +1,84 @@
+There are two folders: project_code and Design_doc
+
+project_code/Code will have three processes:
+
+             //process containing the code for the translation(straight movement)
+             Translation.cpp
+	         |---->translation_unit.cpp
+		 |---->translation_unit.hpp
+		 |---->translation_unit_priv.hpp
+
+             // process containing the code for the orientation(curved movement/IMU)
+	     Orientation.cpp
+	         |---->orientation_unit.cpp
+		 |---->orientation_unit.hpp
+		 |---->orientation_unit_priv.hpp
+
+             // process containing the odometry algorithm
+             Odometry.cpp
+
+             // process to test the communication(prototype)
+	     jitter_measure_proto.c
+
+project_code/Design_doc contains the design effort for designing these processes. It contains a "formal_UP_process.html" file which will show the design. A simple way to view to view your design is with the command:
+
+			firefox formal_UP_process.html &
+
+"firefox" can be replaced with other browser. Make sure that you are in the directory "Design_doc" when executing this command.
+
+
+<<<<<<<<<<<<<<<<<<<<Project plan and progress>>>>>>>>>>>>>>>>>>>>
+This portion describes the progress of the project.
+
+w->weeks
+m->months
+d->days
+
+<<<<<<<<<<Initial plan>>>>>>>>>>
+***************Total****************************>5.5m
+_____ Trying it using PREEMPT-RT________________> 7.4w
+------study ROS 2.0 navigation stack------------> 2.0w
+------Implement real-time properties------------> 3.0w
+------Test real-time properties-----------------> 2.0w
+------Documnent findings------------------------> 2.0d
+
+______Using the DDS_____________________________>6.4w
+------Study DDS docs---------------------------->2.0w
+------Implement DDS mods.----------------------->3.0w
+------Test DDS modifications-------------------->5.0d
+------document findings------------------------->2.0d
+
+______other RT implementations__________________>2.3m
+------study RT implementations------------------>4.0w
+------Try RT implementations-------------------->4.0w
+------Test performace--------------------------->2.0w
+
+
+<<<<<<<<<<final(modified) plan>>>>>>>>>>
+***************Total*****************************>5.5m
+______Analysing the system_______________________>3.5m
+------studying the current system---------------->
+------replicating the jitter--------------------->
+------Solving challenges in communication-------->
+------Fixing drivers----------------------------->
+------Making the robot move with ROS 1----------->
+
+______Studying the system to build_______________>1m
+------learning about linux drivers--------------->
+------experimenting real-time techniques--------->
+------making the robot move with ROS 2----------->
+------experimenting with xenomai, Jailhouse------>
+
+______the final system___________________________>1.5m
+------designing the acceptance test-------------->
+------building the software architecture--------->
+------completing the test------------------------>
+
+
+
+
+
+
+
+
+
