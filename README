@@ -1,13 +1,13 @@
 There are two folders: project_code and Design_doc(because of confidentiality agreement, only portions are replicated)
 
-/**********************************
+/**********************************DESIGN****************
 project_code/Design_doc contains the design effort for designing these processes. It contains a "formal_UP_process.html" file which will show the design. A simple way to view the design is with the command:
 
 			firefox formal_UP_process.html &
 
 "firefox" can be replaced with other browser. Make sure that you are in the directory "Design_doc" when executing this command.
 
-/************************************
+/**********************************IMPLEMENTATION********
 project_code/Code will have three processes:
 
              //process containing the code for the translation(straight movement)
