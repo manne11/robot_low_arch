@@ -15,7 +15,7 @@ int main(int argc, char** argv)
 
 
 #ifdef REAL_TIME_613710284348
-    // set policy and priority
+      // set policy and priority
     struct sched_param scheduler_parameter;
     scheduler_parameter.sched_priority = 95;
       if(sched_setscheduler(0, SCHED_FIFO , &scheduler_parameter))
